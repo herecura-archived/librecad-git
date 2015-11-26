@@ -1,6 +1,6 @@
 pkgbase = librecad-git
 	pkgdesc = A 2D CAD drawing tool based on the community edition of QCad.
-	pkgver = 20151124.c81e6b1
+	pkgver = 20151125.3f046de
 	pkgrel = 1
 	url = http://sourceforge.net/projects/librecad/
 	arch = i686
