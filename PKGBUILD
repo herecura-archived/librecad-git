@@ -6,13 +6,13 @@
 
 pkgname=librecad-git
 _gitname="librecad"
-pkgver=20160427.f6da8a0
+pkgver=20160428.a11fd86
 pkgrel=1
 pkgdesc="A 2D CAD drawing tool based on the community edition of QCad."
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/librecad/"
 license=('GPL')
-depends=('qt5-base' 'qt5-svg' 'qt5-tools' 'libxcb' 'muparser')
+depends=('qt5-base' 'qt5-svg' 'qt5-tools' 'libxcb' 'muparser' 'desktop-file-utils' 'hicolor-icon-theme')
 makedepends=('boost' 'imagemagick' 'librsvg' 'git')
 provides=('librecad')
 replaces=('librecad-svn' 'caduntu' 'caduntu-svn')
