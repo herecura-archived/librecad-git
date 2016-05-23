@@ -6,7 +6,7 @@
 
 pkgname=librecad-git
 _gitname="librecad"
-pkgver=20160505.6b16e87
+pkgver=20160521.e224aed
 pkgrel=1
 pkgdesc="A 2D CAD drawing tool based on the community edition of QCad."
 arch=('i686' 'x86_64')
@@ -28,8 +28,12 @@ build() {
 	msg "Starting make..."
 	cd $_gitname
 
-    export CPPFLAGS="-std=c++0x"
     qmake-qt5 librecad.pro
+
+    # fix include path... this is an issue with gcc 6.1.1 and qmake-qt5...
+    make qmake_all
+    sed -i '/INCPATH/s|-isystem /usr/include ||' librecad/src/Makefile
+
     make
 
     (
