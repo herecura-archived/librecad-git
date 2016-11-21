@@ -6,7 +6,7 @@
 
 pkgname=librecad-git
 _gitname="librecad"
-pkgver=20161106.5fff324
+pkgver=20161120.c19bd97
 pkgrel=1
 pkgdesc="A 2D CAD drawing tool based on the community edition of QCad."
 arch=('i686' 'x86_64')
